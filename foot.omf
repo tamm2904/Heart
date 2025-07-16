@@ -1,0 +1,471 @@
+<!-- MTFLASH Glassmorphism Footer - foot.omf -->
+<footer class="mtflash-footer">
+  <div class="footer-container">
+    
+    <!-- Main Content -->
+    <div class="footer-main">
+      <div class="footer-brand">
+        <h2 class="brand-title">
+          <span class="brand-icon">📁</span>
+          MTFLASH FIRMWARE
+        </h2>
+        <p class="brand-tagline">No Ads · No Limits · Pure Speed</p>
+      </div>
+      
+      <div class="footer-actions">
+        <a href="https://zalo.me/0975904043" target="_blank" rel="noopener" class="contact-btn zalo-btn">
+          <span class="btn-icon"></span>
+          <span class="btn-label">Zalo</span>
+        </a>
+        <a href="https://t.me/bunnyVN888" target="_blank" rel="noopener" class="contact-btn telegram-btn">
+          <span class="btn-icon"></span>
+          <span class="btn-label">Telegram</span>
+        </a>
+        <a href="mailto:support@mtflash.com" class="contact-btn email-btn">
+          <span class="btn-icon"></span>
+          <span class="btn-label">Email</span>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="footer-credits">
+        <span class="copyright">© 2025 MTFLASH</span>
+        <span class="divider">·</span>
+        <span class="powered">Powered by OneManager</span>
+      </div>
+      
+      <div class="footer-status">
+        <div class="status-dot"></div>
+        <span class="status-text">All systems operational</span>
+      </div>
+    </div>
+    
+  </div>
+  
+  <!-- Background Elements -->
+  <div class="footer-bg-elements">
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+  </div>
+</footer>
+
+<style>
+/* Glassmorphism Footer - Matching Previous CSS Colors */
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --neuro-light: rgba(255, 255, 255, 0.25);
+  --neuro-dark: rgba(0, 0, 0, 0.25);
+  --primary-cyan: #00d4ff;
+  --primary-purple: #b157ff;
+  --primary-pink: #ff6b9d;
+  --text-glass: rgba(255, 255, 255, 0.9);
+  --text-soft: rgba(255, 255, 255, 0.7);
+  --text-subtle: rgba(255, 255, 255, 0.5);
+  --blur-amount: 20px;
+  --transition-glass: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.mtflash-footer {
+  position: relative;
+  background: 
+    linear-gradient(135deg, 
+      rgba(20, 20, 40, 0.9) 0%,
+      rgba(30, 30, 60, 0.8) 25%,
+      rgba(40, 20, 60, 0.9) 50%,
+      rgba(60, 30, 80, 0.8) 75%,
+      rgba(80, 40, 100, 0.9) 100%
+    ),
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  overflow: hidden;
+  backdrop-filter: blur(var(--blur-amount));
+  border-top: 1px solid var(--glass-border);
+  min-height: 180px;
+}
+
+.footer-bg-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.15;
+  animation: floatingOrbs 25s linear infinite;
+}
+
+.bg-orb-1 {
+  width: 300px;
+  height: 300px;
+  background: var(--primary-cyan);
+  top: -150px;
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.bg-orb-2 {
+  width: 200px;
+  height: 200px;
+  background: var(--primary-purple);
+  top: -100px;
+  right: 30%;
+  animation-delay: -8s;
+}
+
+.bg-orb-3 {
+  width: 250px;
+  height: 250px;
+  background: var(--primary-pink);
+  bottom: -125px;
+  left: 60%;
+  animation-delay: -16s;
+}
+
+@keyframes floatingOrbs {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33% { transform: translateY(-20px) rotate(120deg); }
+  66% { transform: translateY(10px) rotate(240deg); }
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 24px 30px;
+  position: relative;
+  z-index: 10;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 40px;
+}
+
+.footer-brand {
+  flex: 1;
+}
+
+.brand-title {
+  font-size: clamp(24px, 4vw, 32px);
+  font-weight: 700;
+  color: var(--text-glass);
+  margin: 0 0 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -0.02em;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+
+.brand-title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, var(--primary-cyan), var(--primary-purple), var(--primary-pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0;
+  animation: titleGlow 4s ease-in-out infinite;
+}
+
+@keyframes titleGlow {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 0.6; }
+}
+
+.brand-icon {
+  font-size: 28px;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+}
+
+.brand-tagline {
+  font-size: 16px;
+  color: var(--text-soft);
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+}
+
+.footer-actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.contact-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border-radius: 16px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-glass);
+  transition: var(--transition-glass);
+  overflow: hidden;
+  backdrop-filter: blur(var(--blur-amount));
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  box-shadow: var(--glass-shadow);
+  min-width: 120px;
+  text-transform: capitalize;
+  letter-spacing: 0.2px;
+}
+
+.contact-btn::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, transparent, var(--glass-border), transparent);
+  border-radius: 16px;
+  opacity: 0;
+  transition: var(--transition-glass);
+  z-index: -1;
+}
+
+.contact-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: var(--transition-glass);
+}
+
+.contact-btn:hover::after {
+  left: 100%;
+}
+
+.contact-btn:hover::before {
+  opacity: 1;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+}
+
+.btn-icon {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: var(--transition-glass);
+}
+
+.contact-btn:hover .btn-icon {
+  transform: scale(1.1);
+}
+
+.zalo-btn {
+  background: 
+    linear-gradient(135deg, rgba(0, 212, 255, 0.25) 0%, rgba(0, 150, 255, 0.15) 100%),
+    var(--glass-bg);
+  box-shadow: 
+    0 8px 32px rgba(0, 212, 255, 0.2),
+    inset 0 1px 0 rgba(0, 212, 255, 0.3);
+}
+
+.zalo-btn .btn-icon::before {
+  content: '💬';
+}
+
+.telegram-btn {
+  background: 
+    linear-gradient(135deg, rgba(177, 87, 255, 0.25) 0%, rgba(150, 50, 255, 0.15) 100%),
+    var(--glass-bg);
+  box-shadow: 
+    0 8px 32px rgba(177, 87, 255, 0.2),
+    inset 0 1px 0 rgba(177, 87, 255, 0.3);
+}
+
+.telegram-btn .btn-icon::before {
+  content: '🚀';
+}
+
+.email-btn {
+  background: 
+    linear-gradient(135deg, rgba(255, 107, 157, 0.25) 0%, rgba(255, 80, 120, 0.15) 100%),
+    var(--glass-bg);
+  box-shadow: 
+    0 8px 32px rgba(255, 107, 157, 0.2),
+    inset 0 1px 0 rgba(255, 107, 157, 0.3);
+}
+
+.email-btn .btn-icon::before {
+  content: '💌';
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  border-top: 1px solid var(--glass-border);
+  gap: 24px;
+  position: relative;
+}
+
+.footer-bottom::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--primary-cyan), var(--primary-purple), var(--primary-pink), transparent);
+  animation: bottomGlow 3s ease-in-out infinite;
+}
+
+@keyframes bottomGlow {
+  0%, 100% { opacity: 0.3; width: 150px; }
+  50% { opacity: 0.8; width: 200px; }
+}
+
+.footer-credits {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-subtle);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.copyright {
+  font-weight: 500;
+  color: var(--text-soft);
+}
+
+.divider {
+  opacity: 0.5;
+}
+
+.powered {
+  font-weight: 400;
+}
+
+.footer-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-soft);
+  font-size: 14px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary-cyan);
+  animation: statusPulse 2s ease-in-out infinite;
+  box-shadow: 0 0 10px var(--primary-cyan);
+}
+
+@keyframes statusPulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.2);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 40px 20px 25px;
+  }
+  
+  .footer-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .footer-actions {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  .contact-btn {
+    min-width: 100px;
+    padding: 12px 20px;
+    font-size: 13px;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-actions {
+    flex-direction: column;
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  .contact-btn {
+    width: 100%;
+  }
+  
+  .brand-title {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+/* Focus States */
+.contact-btn:focus {
+  outline: none;
+  box-shadow: 
+    0 0 0 3px rgba(255, 255, 255, 0.3),
+    var(--glass-shadow);
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
